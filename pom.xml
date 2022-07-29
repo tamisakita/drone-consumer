@@ -41,7 +41,13 @@
 			<artifactId>spring-rabbit-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.mailjet</groupId>
+			<artifactId>mailjet-client</artifactId>
+			<version>5.2.0</version>
+		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>
