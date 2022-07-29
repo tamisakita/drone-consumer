@@ -25,12 +25,12 @@ public class DroneDataDto implements Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb
-            .append("Drone ").append(id).append("\n")
-            .append("Latitude ").append(latitude).append("\n")
-            .append("Longitude ").append(longitude).append("\n")
-            .append("Temperatura ").append(temperatura).append("\n")
-            .append("Umidade ").append(umidade).append("\n")
-            .append("Rastreamento ").append(rastreamento).append("\n");
+                .append("Drone ").append(id).append("\n")
+                .append("Latitude ").append(latitude).append("\n")
+                .append("Longitude ").append(longitude).append("\n")
+                .append("Temperatura ").append(temperatura).append("\n")
+                .append("Umidade ").append(umidade).append("\n")
+                .append("Rastreamento ").append(rastreamento).append("\n");
         return sb.toString();
     }
 }

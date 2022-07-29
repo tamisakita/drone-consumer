@@ -13,7 +13,7 @@ import java.util.List;
 @EnableRabbit
 @SpringBootApplication
 public class DroneConsumerApplication {
-	private static final List<DroneDataDto> alertDrones = Collections.synchronizedList(new ArrayList<>());
+	public static final List<DroneDataDto> alertDrones = Collections.synchronizedList(new ArrayList<>());
 	public static void main(String[] args) {
 		SpringApplication.run(DroneConsumerApplication.class, args);
 		new Thread(new DroneAlertRunnable(alertDrones)).run();
