@@ -15,18 +15,40 @@ Este é o componente Consumer, você pode conferir o componente Producer neste l
 * RabbitMQ;
 * IntelliJ
 
-## Getting Started
+## Configurações
 
-* Criar uma conta no [CloudAMQP](https://customer.cloudamqp.com/instancehttps://customer.cloudamqp.com/instance) para acessar o [RabbitMQ](https://jackal.rmq.cloudamqp.com/#/https://jackal.rmq.cloudamqp.com/#/)
+* Criar uma conta no [MailJet](https://www.mailjet.com/) e gerar as chaves de API no [link](https://app.mailjet.com/account/apikeys):
+![alt text](https://github.com/tamisakita/drone-consumer/blob/main/criando-chave-api.png "Chave API")
 
 * Na pasta Resources criar o application.properties e adicionar o código para configurar o RabbitMQ
 ```java
-spring.rabbitmq.addresses=amqps://qlaczvbi:57UWEGtaVc4iWep3VyP3k65bQxvXk2fF@jackal.rmq.cloudamqp.com/qlaczvbi
+spring.rabbitmq.addresses=amqps://*****
 
 queue.name=fiap.scj.mensagens
+
+mailjeft.apikey=*****
+
+mailjeft.secretkey=*****
+
+mailjeft.sender=*****
+
+mailjeft.receiver=*****
+
+mailjeft.sendername=*****
+
+mailjeft.receivername=*****
 ```
 
-## Funcionalidades
+## Funcionalidade
+
+### RabbitMQ 
+![alt text](https://github.com/tamisakita/drone-consumer/blob/main/rabbitMQ.pnghttps://github.com/tamisakita/drone-consumer/blob/main/rabbitMQ.png "RabbitMQ")
+
+### Recebendo os dados no Consumer
+![alt text](https://github.com/tamisakita/drone-consumer/blob/main/drone-consumer-teste-postman.png "Consumer")
+
+### Recebendo os dados no Email
+![alt text](https://github.com/tamisakita/drone-consumer/blob/main/email.png "Email")
 
 ## Author & Version Control
 [Patricia Tami Sakita](https://github.com/tamisakita) and [Gustavo Ceccon](https://github.com/gfcecconhttps://github.com/gfceccon) - Drone Project v.01
