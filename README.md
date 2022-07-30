@@ -42,7 +42,7 @@ mailjeft.receivername=*****
 ## Funcionalidade
 
 ### RabbitMQ 
-![alt text](https://github.com/tamisakita/drone-consumer/blob/main/rabbitMQ.pnghttps://github.com/tamisakita/drone-consumer/blob/main/rabbitMQ.png "RabbitMQ")
+![alt text](https://github.com/tamisakita/drone-consumer/blob/main/rabbitMQ.png "RabbitMQ")
 
 ### Recebendo os dados no Consumer
 ![alt text](https://github.com/tamisakita/drone-consumer/blob/main/drone-consumer-teste-postman.png "Consumer")
